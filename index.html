@@ -1,6 +1,7 @@
 <Html>   
 <Head>  
 <script>
+    document.write(window.location);
 (function(apiKey){
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
     v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
@@ -24,6 +25,7 @@
 
             account: {
                 id:              org-id-1 // Highly recommended, required if using Pendo Feedback
+                host: window.location.hostname
                 // name:         // Optional
                 // is_paying:    // Recommended if using Pendo Feedback
                 // monthly_value:// Recommended if using Pendo Feedback
